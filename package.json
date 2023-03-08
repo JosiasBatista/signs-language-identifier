@@ -1,0 +1,14 @@
+{
+  "name": "signs-language-identifier",
+  "version": "0.0.1",
+  "description": "Javascript project to identifie signs language using browser camera and machine learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx browser-sync -w"
+  },
+  "author": "Josias Abraao Batista Leal",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.28.3"
+  }
+}
