@@ -11,8 +11,8 @@ export default class Camera {
     const videoConfig = {
       audio: false,
       video: {
-        width: globalThis.screen.availWidth,
-        height: globalThis.screen.availHeight,
+        width: globalThis.screen.width,
+        height: globalThis.screen.height,
         frameRate: {
           ideal: 60
         }
@@ -23,8 +23,7 @@ export default class Camera {
     const camera = new Camera();
     camera.video.srcObject = stream;
 
-    // debug reasons
-    camera.video.height = globalThis.screen.availWidth / 4;
+    //camera.video.height = globalThis.screen.availWidth / 4;
     camera.video.width = globalThis.screen.availHeight;
 
     document.body.append(camera.video);
